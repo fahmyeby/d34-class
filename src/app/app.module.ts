@@ -6,13 +6,21 @@ import { ExampleComponent } from './component/example.component';
 import { FileUploadComponent } from './component/file-upload.component';
 import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { GalleryComponent } from './component/gallery.component';
+import { CreateEmployeeComponent } from './crud/create-employee.component';
+import { ListEmployeeComponent } from './crud/list-employee.component';
+import { DetailsEmployeeComponent } from './crud/details-employee.component';
+import { UpdateEmployeeComponent } from './crud/update-employee.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExampleComponent,
     FileUploadComponent,
-    GalleryComponent
+    GalleryComponent,
+    CreateEmployeeComponent,
+    ListEmployeeComponent,
+    DetailsEmployeeComponent,
+    UpdateEmployeeComponent
   ],
   imports: [
     BrowserModule,

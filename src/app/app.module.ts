@@ -10,6 +10,8 @@ import { CreateEmployeeComponent } from './crud/create-employee.component';
 import { ListEmployeeComponent } from './crud/list-employee.component';
 import { DetailsEmployeeComponent } from './crud/details-employee.component';
 import { UpdateEmployeeComponent } from './crud/update-employee.component';
+import { MaterialModule } from './module/material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { UpdateEmployeeComponent } from './crud/update-employee.component';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [provideHttpClient()],
   bootstrap: [AppComponent]
